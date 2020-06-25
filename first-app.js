@@ -11,6 +11,11 @@ const person = {
         console.log("My age is " + this.age); // the "this" is refers to the global scope, not to the object person here
     }
 };
-person.greet();
-person.greet1();
-person.greet2();
+
+const hobbies = ['Sports', 'Reading'];
+// for(let hobby of hobbies) // "let" here will store every element of hobbies array to "hobby"
+// {
+//     console.log(hobby);
+// }
+console.log(hobbies.map(hobby =>  'Hobby: ' + hobby )); //map give you a new array to edit it whatever you one and 
+console.log(hobbies);
